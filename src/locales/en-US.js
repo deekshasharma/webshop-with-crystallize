@@ -84,7 +84,7 @@ export default {
     layout: {
       menu: 'Menu',
       searchPlaceholder: 'Find things',
-      ecomBy: 'eCommerce by',
+      ecomBy: '',
       loadingVideo: 'Loading video',
       slider: {
         previous: 'See the previous item',

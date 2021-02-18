@@ -81,7 +81,7 @@ export default {
     layout: {
       menu: 'Meny',
       searchPlaceholder: 'Søk etter ting',
-      ecomBy: 'Nettbutikk av',
+      ecomBy: '',
       loadingVideo: 'Laster video',
       slider: {
         previous: 'Se forrige element',

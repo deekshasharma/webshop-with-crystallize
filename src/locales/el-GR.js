@@ -81,7 +81,7 @@ export default {
     },
     layout: {
       menu: 'Μενού',
-      ecomBy: 'Ηλεκτρονικό κατάστημα από',
+      ecomBy: '',
       loadingVideo: 'Το βίνετο φορτώνει',
       slider: {
         previous: 'Δείτε το προηγούμενο αντικείμενο',

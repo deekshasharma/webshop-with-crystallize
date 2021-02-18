@@ -83,7 +83,7 @@ export default {
     layout: {
       menu: 'Menú',
       searchPlaceholder: 'Busca cosas',
-      ecomBy: 'eCommerce por',
+      ecomBy: '',
       loadingVideo: 'Cargando video',
       slider: {
         previous: 'Ver el elemento siguiente',
