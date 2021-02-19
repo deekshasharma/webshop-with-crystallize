@@ -34,6 +34,8 @@ export const NavList = styled.footer`
 export const Social = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-start; 
   margin: 0 0 0 auto;
+  width: 70px;
 `

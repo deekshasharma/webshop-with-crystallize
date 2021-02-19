@@ -19,12 +19,12 @@ export default function Footer() {
       </Link>
       <p>© 2021 Kahn, Inc. All rights reserved.</p>
       <Social>
-        <button>
+        <a href={"https://facebook.com"} target="_blank">
           <img src="/static/fb.svg" alt="facebook"/>
-        </button>
-        <button>
+        </a>
+        <a href={"https://instagram.com"} target="_blank">
           <img src="/static/insta.svg" alt="instagram"/>
-        </button>
+        </a>
       </Social>
       <NavList>
         <h5>{t('layout.menu')}</h5>
