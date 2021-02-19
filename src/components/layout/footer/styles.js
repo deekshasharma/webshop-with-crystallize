@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const Outer = styled.footer`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1600px;
   margin: 50px auto;
   border-top: 2px solid var(--color-box-background);
-  padding: 50px 50px;
+  padding: 20px 20px;
   justify-content: space-between;
 `;
 
@@ -30,3 +30,10 @@ export const NavList = styled.footer`
     margin-bottom: 10px;
   }
 `;
+
+export const Social = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  margin: 0 0 0 auto;
+`

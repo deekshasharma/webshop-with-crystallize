@@ -1,12 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-
-import LogoCrystallize from 'ui/icons/logo-crystallize';
 import { useT } from 'lib/i18n';
-
 import { useSettings } from 'components/settings-context';
-
-import { Outer, Logo, NavList, Powered } from './styles';
+import { Outer, Logo, NavList, Social } from './styles';
 
 export default function Footer() {
   const t = useT();
@@ -21,6 +17,15 @@ export default function Footer() {
           </Logo>
         </a>
       </Link>
+      <p>© 2021 Kahn, Inc. All rights reserved.</p>
+      <Social>
+        <button>
+          <img src="/static/fb.svg" alt="facebook"/>
+        </button>
+        <button>
+          <img src="/static/insta.svg" alt="instagram"/>
+        </button>
+      </Social>
       <NavList>
         <h5>{t('layout.menu')}</h5>
         {mainNavigation?.map((category) => (
@@ -31,6 +36,7 @@ export default function Footer() {
           </li>
         ))}
       </NavList>
+
     </Outer>
   );
 }
