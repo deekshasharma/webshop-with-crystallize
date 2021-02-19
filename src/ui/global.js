@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     /* Typography */
-    --font-family-main: "Trebuchet MS", sans-serif;
+    --font-family-main: "Roboto", "Trebuchet MS", sans-serif;
 
     --font-size-xl: 40px;
     --font-size-lg: 32px;
@@ -90,7 +90,7 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font: 14px/1 Helvetica, Arial, Verdana, sans-serif;
+    font: 14px/1 Roboto, Helvetica, Arial, Verdana, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background: var(--color-main-background);

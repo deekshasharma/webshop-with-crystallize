@@ -31,7 +31,7 @@ export default {
     product: {
       relatedProduct: 'You might also be interested in',
       relatedProduct_plural: 'You might also be interested in',
-      addToBasket: 'Add to Basket',
+      addToBasket: 'Add to Cart',
       buy: 'BUY',
       stock: '{{stockCount}} in stock',
       outOfStock: 'Out of stock',
@@ -43,10 +43,10 @@ export default {
       }
     },
     basket: {
-      title: 'Basket',
+      title: 'Cart',
       loading: 'Hold on. Getting your basket...',
       removeItem: 'Remove {{name}} from basket',
-      empty: 'Your basket is empty',
+      empty: 'Your cart is empty',
       empty_inCheckout: 'You have no items in your basket',
       remainingUntilFreeShipping:
         'Add another {{amount, currency}} to your order for free shipping.',
@@ -83,7 +83,7 @@ export default {
     },
     layout: {
       menu: 'Menu',
-      searchPlaceholder: 'Find things',
+      searchPlaceholder: 'Search',
       ecomBy: '',
       loadingVideo: 'Loading video',
       slider: {
