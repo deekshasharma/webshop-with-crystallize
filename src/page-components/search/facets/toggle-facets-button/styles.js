@@ -9,11 +9,11 @@ export const Button = styled.button`
   appearance: none;
   background: var(--color-background);
   border: none;
-  color: var(--color-text);
+  color: var(--color-text-main);
   cursor: pointer;
   display: inline-flex;
   font-family: var(--font-family-main);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
   padding: 0.75rem 1rem;
@@ -22,9 +22,9 @@ export const Button = styled.button`
   text-decoration: none;
 
   &:hover {
-    background: var(--color-background-hover);
-    color: var(--color-text-hover);
-    border-radius: 4px;
+    border: 0.4px solid gray;
+    color: var(--font-family-main);
+    border-radius: 30px;
   }
 
   ${Text} {
