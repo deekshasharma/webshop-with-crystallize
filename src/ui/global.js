@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
     /* Colors */
     --color-main-background: #fff;
-    --color-text-main: #080708;
+    --color-text-main: #000000;
     --color-text-sub: #4c505b;
 
     --color-box-background: #efefef;
@@ -29,8 +29,8 @@ export default createGlobalStyle`
     --color-discount:#EE6969;
     --color-blockquote: var(--color-text-main);
   
-    --color-primary-action: #FBDCCE;
-    --color-primary-action-content:#080708;
+    --color-primary-action: #000000;
+    --color-primary-action-content:#ffffff;
     --color-icon-details: var(--color-primary-action);
     --color-ui-details: var(--color-primary-action);
 
