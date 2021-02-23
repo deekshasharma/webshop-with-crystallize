@@ -2,33 +2,16 @@ import styled from 'styled-components';
 
 export const Outer = styled.footer`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1600px;
   margin: 50px auto;
   border-top: 2px solid var(--color-box-background);
-  padding: 50px 50px;
+  padding: 20px 20px;
   justify-content: space-between;
 `;
 
 export const Logo = styled.div`
   width: 70px;
-`;
-
-export const Powered = styled.div`
-  width: 100%;
-  display: block;
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 600;
-
-  p {
-    margin: 0;
-  }
-
-  svg {
-    width: 120px;
-  }
 `;
 
 export const NavList = styled.footer`
@@ -47,3 +30,12 @@ export const NavList = styled.footer`
     margin-bottom: 10px;
   }
 `;
+
+export const Social = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin: 0 0 0 auto;
+  width: 70px;
+`

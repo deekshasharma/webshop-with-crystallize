@@ -3,14 +3,15 @@ import is from 'styled-is';
 
 const Tag = styled.div`
   padding: 6px 8px;
-  border-radius: 2px;
+  border-radius: 16px;
+  border: 0.4px solid gray;
   background: #fff;
   font-weight: 500;
   color: var(--color-text-main);
   font-size: var(--font-size-tags);
   display: inline-block;
   margin-right: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   ${is('underline')`
     font-size: 18px;
     margin-bottom:5px;

@@ -256,6 +256,7 @@ export default function Payment() {
                         (p) => p.name === paymentProviderName
                       );
                       if (!paymentProvider) {
+                        console.log("Payment Provider nahin ha: ", paymentProvider)
                         return (
                           <small>
                             {t('checkout.paymentProviderNotConfigured', {

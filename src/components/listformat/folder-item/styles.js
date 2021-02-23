@@ -6,11 +6,13 @@ export const Outer = styled.a`
   position: relative;
   display: flex;
   align-items: center;
-  background: var(--color-primary-action);
+  //background: var(--color-primary-action);
   padding: 15px 25px;
   transition: all 0.1s ease-in-out;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  border: 4px solid #fff;
+  border: 1px solid gray;
+  border-radius: 25px;
+  margin-right: 15px;
 `;
 
 export const Text = styled.div`
@@ -24,6 +26,6 @@ export const Text = styled.div`
     text-align: center;
     font-weight: 600;
     margin: 0 0 0 5px;
-    color: inherit;
+    color: black;
   }
 `;

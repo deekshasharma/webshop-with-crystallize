@@ -20,6 +20,7 @@ const CheckoutBtn = styled(Button)`
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  border-radius: 25px;
 
   &:not([disabled]):hover {
     background: var(--color-text-main);

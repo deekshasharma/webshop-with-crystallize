@@ -18,7 +18,7 @@ const Inner = styled.span`
   text-align: center;
   padding: 16px 25px;
   position: relative;
-  border-radius: 4px;
+  border-radius: 25px;
 `;
 
 const Outer = styled.button.attrs((p) => ({
