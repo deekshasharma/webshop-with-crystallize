@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import is from 'styled-is';
 import { useRouter } from 'next/router';
@@ -8,7 +8,7 @@ import { useBasket } from 'components/basket';
 import OrderItems from 'components/order-items';
 import { H1, H3, Outer, Header } from 'ui';
 import { useT } from 'lib/i18n';
-
+import { skuToUrl } from '../../db/store';
 import BillingDetails from './billing-details';
 
 const CustomHeader = styled(Header)`
@@ -39,6 +39,17 @@ export default function Confirmation({ order }) {
   const basket = useBasket();
   const t = useT();
   const router = useRouter();
+  const [filePath, setFilePath] = useState('');
+
+  useEffect(() => {
+    if(order) {
+      const cart = order.cart[0];
+      if(cart) {
+        const selectedSku = skuToUrl.filter(item => item.sku === cart['sku'])
+        setFilePath(selectedSku[0].path);
+      }
+    }
+  }, [order])
 
   // Empty the basket
   useEffect(() => {
@@ -114,6 +125,7 @@ export default function Confirmation({ order }) {
               })}
             </TotalLine>
           </Totals>
+          {filePath && <a href={filePath} download>DOWNLOAD FILE</a>}
         </CustomHeader>
       </Outer>
     </Layout>
