@@ -1,7 +1,7 @@
 export const skuToUrl = [
   {
     sku: 'coffee-birds-poster-1613975345008',
-    path: '/static/coffeebirds.jpg'
+    path: '/coffeebirds.jpg'
   },
   {
     sku: 'set-of-4-hand-drawn-vehicles-poster-1614012524115',
