@@ -126,6 +126,7 @@ export default function Confirmation({ order }) {
             </TotalLine>
           </Totals>
           {filePath && <a href={filePath} download>DOWNLOAD FILE</a>}
+          {filePath && <img src={filePath}/>}
         </CustomHeader>
       </Outer>
     </Layout>
