@@ -46,7 +46,7 @@ export async function simplyFetchFromGraph({
   return response.json();
 }
 
-export async function simplyFetchFromGraph2({ uri, query, variables }) {
+export async function simplyFetchFromGraph2({ uri= `${process.env.NEXT_PUBLIC_SERVICE_API_CATALOGUE_URL}`, query, variables }) {
   const body = JSON.stringify({ query, variables })
   try {
 
