@@ -1,8 +1,9 @@
-import { simplyFetchFromGraph } from 'lib/graph';
+import { simplyFetchFromGraph2 } from 'lib/graph';
 import { QUERY_PRODUCT } from './query';
 
 export async function getData({ asPath, language, preview = null }) {
-  const { data } = await simplyFetchFromGraph({
+  const { data } = await simplyFetchFromGraph2({
+    uri:`${process.env.NEXT_PUBLIC_SERVICE_NON_GRAPHQL_API_URL}/api/products/get`,
     query: QUERY_PRODUCT,
     variables: {
       path: asPath,
