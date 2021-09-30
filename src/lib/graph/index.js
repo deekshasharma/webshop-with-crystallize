@@ -72,8 +72,8 @@ export async function simplyFetchFromGraph2({ uri= `${process.env.NEXT_PUBLIC_SE
 }
 
 export function simplyFetchFromSearchGraph(args) {
-  return simplyFetchFromGraph({
-    uri: `https://api.crystallize.com/${process.env.NEXT_PUBLIC_CRYSTALLIZE_TENANT_IDENTIFIER}/search`,
+  return simplyFetchFromGraph2({
+    uri: `${process.env.NEXT_PUBLIC_SERVICE_API_SEARCH_URL}`,
     ...args
   });
 }
