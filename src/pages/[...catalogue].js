@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import DefaultErrorPage from 'next/error';
 
-import { simplyFetchFromGraph } from 'lib/graph';
+import { simplyFetchFromGraph2 } from 'lib/graph';
 import { urlToSpec } from 'lib/search';
 import { getLocaleFromContext, getValidLocale } from 'lib/app-config';
 import Layout from 'components/layout';
@@ -57,7 +57,7 @@ export async function getStaticProps(context) {
     asPath = `/${catalogue.join('/')}`;
 
     // Get the item type
-    const getItemType = await simplyFetchFromGraph({
+    const getItemType = await simplyFetchFromGraph2({
       query: `
         query ITEM_TYPE($language: String!, $path: String!) {
           catalogue(language: $language, path: $path) {
@@ -135,7 +135,7 @@ export async function getStaticPaths({ locales, defaultLocale }) {
     }
 
     try {
-      const allCatalogueItems = await simplyFetchFromGraph({
+      const allCatalogueItems = await simplyFetchFromGraph2({
         query: `
           query GET_ALL_CATALOGUE_ITEMS($language: String!) {
             catalogue(language: $language, path: "/") {

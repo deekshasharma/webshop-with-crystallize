@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { AuthProvider } from 'components/auth';
 import { SettingsProvider } from 'components/settings-context';
 import { BasketProvider } from 'components/basket';
-import { simplyFetchFromGraph } from 'lib/graph';
+import { simplyFetchFromGraph2 } from 'lib/graph';
 import { getLocaleFromContext, defaultLocale } from 'lib/app-config';
 import { I18nextProvider } from 'lib/i18n';
 
@@ -65,7 +65,7 @@ MyApp.getInitialProps = async function ({ router }) {
         tenant,
         mainNavigation: { children: mainNavigation }
       }
-    } = await simplyFetchFromGraph({
+    } = await simplyFetchFromGraph2({
       query: `
         query COMMON_DATA($language: String!) {
           mainNavigation: catalogue(language: $language, path: "/") {
