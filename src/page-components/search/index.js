@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Inner } from 'ui';
 
 import Layout from 'components/layout';
-import { simplyFetchFromGraph, simplyFetchFromSearchGraph } from 'lib/graph';
+import { simplyFetchFromGraph2, simplyFetchFromSearchGraph } from 'lib/graph';
 import { urlToSpec, SEARCH_QUERY } from 'lib/search';
 import { useLocale } from 'lib/app-config';
 import toText from '@crystallize/content-transformer/toText';
@@ -39,7 +39,7 @@ export async function getData({ asPath, preview, language, searchSpec }) {
       }
     }),
     asPath
-      ? simplyFetchFromGraph({
+      ? simplyFetchFromGraph2({
           query,
           variables: {
             path: asPath,
