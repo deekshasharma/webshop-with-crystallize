@@ -4,7 +4,7 @@
  * https://nextjs.org/docs/advanced-features/preview-mode
  */
 
-import { simplyFetchFromGraph } from 'lib/graph';
+import { simplyFetchFromGraph2 } from 'lib/graph';
 import { defaultLocale } from 'lib/app-config';
 
 export default async (req, res) => {
@@ -44,7 +44,7 @@ export default async (req, res) => {
       data: {
         catalogue: { path }
       }
-    } = await simplyFetchFromGraph({
+    } = await simplyFetchFromGraph2({
       query: `
         query ITEM_TYPE($language: String!, $path: String!) {
           catalogue(language: $language, path: $path) {

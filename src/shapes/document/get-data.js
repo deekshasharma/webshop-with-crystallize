@@ -1,8 +1,8 @@
-import { simplyFetchFromGraph } from 'lib/graph';
+import { simplyFetchFromGraph2 } from 'lib/graph';
 import { QUERY_DOCUMENT } from './query';
 
 export async function getData({ asPath, language, preview = null }) {
-  const { data } = await simplyFetchFromGraph({
+  const { data } = await simplyFetchFromGraph2({
     query: QUERY_DOCUMENT,
     variables: {
       path: asPath,
